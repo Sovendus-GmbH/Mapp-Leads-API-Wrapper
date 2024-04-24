@@ -2,6 +2,26 @@
 
 This is a wrapper API to create and subscribe a contact to the MAPP API
 
+## Example Request to create and sign up a contact on MAPP
+
+```bash
+curl -X POST \
+  http://localhost:3000 \
+  -H 'apiKey: the-api-key-from-.env' \
+  -H 'content-type: application/json' \
+  -d '{
+  "firstname": "John",
+  "lastname": "Smith",
+  "email": "jon@example.com",
+  "countryCode": "DE",
+  "listId": "1322456",
+  "subscriptionMode": "DOUBLE_OPT_IN",
+  "mappUsername": "user@example.com",
+  "mappPassword": "super-secret",
+  "mappDomain": "mapp.instance.com"
+}'
+```
+
 ## Run it in production
 
 ### 1. Clone the Repository
