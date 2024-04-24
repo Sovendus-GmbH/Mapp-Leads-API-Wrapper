@@ -6,7 +6,7 @@ This is a wrapper API to create and subscribe a contact to the MAPP API
 
 ```bash
 curl -X POST \
-  http://localhost:3000 \
+  https://domain.of-this-app.com \
   -H 'apiKey: the-api-key-from-.env' \
   -H 'content-type: application/json' \
   -d '{
